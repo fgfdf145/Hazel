@@ -5,7 +5,8 @@
 
 #include <vector>
 
-namespace Hazel {
+namespace Hazel 
+{
 
 	class HAZEL_API LayerStack
 	{

@@ -9,7 +9,8 @@
 
 #include "Hazel/ImGui/ImGuiLayer.h"
 
-namespace Hazel {
+namespace Hazel 
+{
 
 	class HAZEL_API Application
 	{
