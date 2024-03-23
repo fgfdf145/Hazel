@@ -1,7 +1,6 @@
 workspace "Hazel"
 	architecture "x64"
 	startproject "Sandbox"
-	buildoptions { "/MP" } -- MSVC 的并行编译选项
 
 	configurations
 	{
@@ -111,6 +110,7 @@ project "Sandbox"
 	{
 		"Hazel/vendor/spdlog/include",
 		"Hazel/src",
+		"Hazel/vendor",
 		"%{IncludeDir.glm}"
 	}
 

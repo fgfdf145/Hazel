@@ -1,4 +1,6 @@
 #include <Hazel.h>
+#include "imgui.h"
+
 
 class ExampleLayer : public Hazel::Layer
 {
@@ -15,6 +17,8 @@ public:
 			HZ_TRACE("Tab key is pressed !");
 		}
 	}
+
+	
 
 	void OnEvent(Hazel::Event& event) override
 	{
