@@ -5,7 +5,7 @@ namespace Hazel {
 
 	LayerStack::LayerStack()
 	{
-
+		
 	}
 
 	LayerStack::~LayerStack()
