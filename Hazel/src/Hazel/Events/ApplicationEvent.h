@@ -5,16 +5,16 @@
 namespace Hazel 
 {
 
-	class HAZEL_API WindowResizeEvent : public Event
+	class HAZEL_API WindowResizeEvent : public Event//window重新设置大小
 	{
 	public:
-		WindowResizeEvent(unsigned int width, unsigned int height)
+		WindowResizeEvent(unsigned int width, unsigned int height)//大小用unsigned int定义，并初始化为width和height
 			: m_Width(width), m_Height(height) {}
 
-		inline unsigned int GetWidth() const { return m_Width; }
+		inline unsigned int GetWidth() const { return m_Width; }//接收长和宽的数据
 		inline unsigned int GetHeight() const { return m_Height; }
 
-		std::string ToString() const override
+		std::string ToString() const override//重载为string并输出
 		{
 			std::stringstream ss;
 			ss << "WindowResizeEvent: " << m_Width << ", " << m_Height;
@@ -26,7 +26,7 @@ namespace Hazel
 	private:
 		unsigned int m_Width, m_Height;
 	};
-
+	//以下类功能和名称一致
 	class HAZEL_API WindowCloseEvent : public Event
 	{
 	public:
