@@ -1,7 +1,7 @@
 #pragma once
 
 #ifdef HZ_PLATFORM_WINDOWS
-
+#if HZ_DYNAMIC_LINK
 	#ifdef HZ_BUILD_DLL
 		#define HAZEL_API __declspec(dllexport)
 	#else
@@ -9,6 +9,10 @@
 	#endif
 #else
 	#define HAZEL_API
+#endif
+
+#else
+	#error Hazel only supports Windows!
 #endif
 
 #ifdef HZ_DEBUG
