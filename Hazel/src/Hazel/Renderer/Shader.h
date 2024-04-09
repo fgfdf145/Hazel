@@ -2,8 +2,9 @@
 
 #include <string>
 
-namespace Hazel {
-
+namespace Hazel 
+{
+	//功能与名称一致
 	class Shader
 	{
 	public:

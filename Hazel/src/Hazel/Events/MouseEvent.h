@@ -4,7 +4,7 @@
 
 namespace Hazel 
 {
-
+	//一下类与功能和名称一致
 	class HAZEL_API MouseMovedEvent : public Event
 	{
 	public:

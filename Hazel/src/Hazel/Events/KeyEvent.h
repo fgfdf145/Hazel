@@ -4,18 +4,18 @@
 
 namespace Hazel 
 {
-
+	// 以下类功能与名称一致
 	class HAZEL_API KeyEvent : public Event
 	{
 	public:
 		inline int GetKeyCode() const { return m_KeyCode; }
 
-		EVENT_CLASS_CATEGORY(EventCategoryKeyboard | EventCategoryInput)
+		EVENT_CLASS_CATEGORY(EventCategoryKeyboard | EventCategoryInput)// 接收事件
 	protected:
 		KeyEvent(int keycode)
 			: m_KeyCode(keycode) {}
 
-		int m_KeyCode;
+		int m_KeyCode;// 定义code类型
 	};
 
 	class HAZEL_API KeyPressedEvent : public KeyEvent

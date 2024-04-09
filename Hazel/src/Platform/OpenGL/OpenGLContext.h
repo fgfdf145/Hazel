@@ -4,8 +4,9 @@
 
 struct GLFWwindow;
 
-namespace Hazel {
-
+namespace Hazel 
+{
+	// 抽象类和函数
 	class OpenGLContext : public GraphicsContext
 	{
 	public:

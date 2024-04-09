@@ -13,7 +13,7 @@
 
 namespace Hazel 
 {
-
+	// 封装Imgui函数，功能与名称一致
 	ImGuiLayer::ImGuiLayer()
 		: Layer("ImGuiLayer")
 	{

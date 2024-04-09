@@ -5,7 +5,8 @@
 #include <glad/glad.h>
 #include <GL/GL.h>
 
-namespace Hazel {
+namespace Hazel 
+{
 
 	OpenGLContext::OpenGLContext(GLFWwindow* windowHandle)
 		: m_WindowHandle(windowHandle)
