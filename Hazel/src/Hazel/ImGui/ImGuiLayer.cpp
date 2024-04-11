@@ -23,7 +23,7 @@ namespace Hazel
 	{
 	}
 
-	void ImGuiLayer::OnAttach()
+	void ImGuiLayer::OnAttach()//初始化io和绑定，在这个层应用到程序时调用
 	{
 		IMGUI_CHECKVERSION();
 		ImGui::CreateContext();
@@ -55,14 +55,14 @@ namespace Hazel
 		ImGui_ImplOpenGL3_Init("#version 410");
 	}
 
-	void ImGuiLayer::OnDetach()
+	void ImGuiLayer::OnDetach()//解除绑定分离api
 	{
 		ImGui_ImplOpenGL3_Shutdown();
 		ImGui_ImplGlfw_Shutdown();
 		ImGui::DestroyContext();
 	}
 
-	void ImGuiLayer::Begin()
+	void ImGuiLayer::Begin()//用于渲染前的准备工作
 	{
 
 		ImGui_ImplOpenGL3_NewFrame();
@@ -71,7 +71,7 @@ namespace Hazel
 		
 	}
 
-	void ImGuiLayer::End()
+	void ImGuiLayer::End()//渲染所有的ImGui元素，并处理多视口的情况。
 	{
 		ImGuiIO& io = ImGui::GetIO();
 
