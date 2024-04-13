@@ -1,9 +1,11 @@
- #include "hzpch.h"
+#include "hzpch.h"
 #include "Hazel/Application.h"
 
 #include "Hazel/Log.h"
 
 #include <glad/glad.h>
+
+#include "Hazel/Renderer/Renderer.h"
 
 namespace Hazel 
 {
@@ -78,7 +80,6 @@ namespace Hazel
 		//三角形着色器
 		{
 
-
 			std::string vertexSrc = R"(
 			#version 330 core
 			
@@ -141,10 +142,12 @@ namespace Hazel
 
 			m_BlueShader.reset(new Shader(blueShaderVertexSrc, blueShaderFragmentSrc));
 		}
+		
 	}
 
 	Application::~Application()
 	{
+
 	}
 
 	void Application::PushLayer(Layer* layer)
@@ -176,17 +179,19 @@ namespace Hazel
 	{
 		while (m_Running)
 		{
-			glClearColor(0.0f, 0.0f, 0.0f, 1);
-			glClear(GL_COLOR_BUFFER_BIT);
+			RenderCommand::SetClearColor({ 0.1f, 0.1f, 0.1f, 1 });
+			RenderCommand::Clear();
+
+			Renderer::BeginScene();
 
 			m_BlueShader->Bind();
-			m_SquareVA->Bind();
-			glDrawElements(GL_TRIANGLES, m_SquareVA->GetIndexBuffer()->GetCount(), GL_UNSIGNED_INT, nullptr);
+			Renderer::Submit(m_SquareVA);
 			
 			m_Shader->Bind();
 
-			m_VertexArray->Bind();
-			glDrawElements(GL_TRIANGLES, m_VertexArray->GetIndexBuffer()->GetCount(), GL_UNSIGNED_INT, nullptr);
+			Renderer::Submit(m_VertexArray);
+
+			Renderer::EndScene();
 
 			for (Layer* layer : m_LayerStack)
 				layer->OnUpdate();
