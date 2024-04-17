@@ -5,7 +5,7 @@
 
 namespace Hazel {
 
-	OrthographicCamera::OrthographicCamera(float left, float right, float bottom, float top)
+	OrthographicCamera::OrthographicCamera(float left, float right, float bottom, float top)// 初始化一个正交相机
 		: m_ProjectionMatrix(glm::ortho(left, right, bottom, top, -1.0f, 1.0f)), m_ViewMatrix(1.0f)
 	{
 		m_ViewProjectionMatrix = m_ProjectionMatrix * m_ViewMatrix;
@@ -14,7 +14,7 @@ namespace Hazel {
 	void OrthographicCamera::RecalculateViewMatrix()
 	{
 		glm::mat4 transform = glm::translate(glm::mat4(1.0f), m_Position) *
-			glm::rotate(glm::mat4(1.0f), glm::radians(m_Rotation), glm::vec3(0, 0, 1));
+			glm::rotate(glm::mat4(1.0f), glm::radians(m_Rotation), glm::vec3(0, 0, 1));// 设置转换角度和位置
 
 		m_ViewMatrix = glm::inverse(transform);
 		m_ViewProjectionMatrix = m_ProjectionMatrix * m_ViewMatrix;

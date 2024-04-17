@@ -110,7 +110,7 @@ namespace Hazel
 			}
 										 )";
 
-			m_Shader.reset(new Shader(vertexSrc, fragmentSrc));
+			m_TriangleShader.reset(new Shader(vertexSrc, fragmentSrc));
 		}
 
 		//¾ØÐÎ×ÅÉ«Æ÷
@@ -141,7 +141,7 @@ namespace Hazel
 			}
 												 )";
 
-			m_BlueShader.reset(new Shader(blueShaderVertexSrc, blueShaderFragmentSrc));
+			m_BackgroundShader.reset(new Shader(blueShaderVertexSrc, blueShaderFragmentSrc));
 		}
 		
 	}
@@ -188,8 +188,8 @@ namespace Hazel
 
 			Renderer::BeginScene(m_Camera);
 			
-			Renderer::Submit(m_BlueShader, m_SquareVA);
-			Renderer::Submit(m_Shader, m_VertexArray);
+			Renderer::Submit(m_BackgroundShader, m_SquareVA);
+			Renderer::Submit(m_TriangleShader, m_VertexArray);
 
 			Renderer::EndScene();
 
