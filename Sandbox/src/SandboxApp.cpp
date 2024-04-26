@@ -3,7 +3,7 @@
 #include "imgui/imgui.h"
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include <Hazel/OrthographicCameraController.h>
+#include <Hazel/Renderer/OrthographicCameraController.h>
 #include <Hazel/Renderer/OrthographicCamera.h>
 
 class ExampleLayer : public Hazel::Layer
