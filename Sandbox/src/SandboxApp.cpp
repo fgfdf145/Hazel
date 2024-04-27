@@ -1,18 +1,19 @@
 #include <Hazel.h>
+#include <Hazel/Core/EntryPoint.h>
 #include "Platform/OpenGL/OpenGLShader.h"
 #include "imgui/imgui.h"
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <Hazel/Renderer/OrthographicCameraController.h>
 #include <Hazel/Renderer/OrthographicCamera.h>
-
+#include "Sandbox2D.h"
 class ExampleLayer : public Hazel::Layer
 {
 public:
 	ExampleLayer()
 		: Layer("Example"), m_CameraController(1280.0f / 720.0f)
 	{
-		m_VertexArray.reset(Hazel::VertexArray::Create());
+		m_VertexArray = Hazel::VertexArray::Create();
 
 		//彩色三角形
 		{
@@ -38,7 +39,7 @@ public:
 			indexBuffer.reset(Hazel::IndexBuffer::Create(indices, sizeof(indices) / sizeof(uint32_t)));
 			m_VertexArray->SetIndexBuffer(indexBuffer);
 
-			m_SquareVA.reset(Hazel::VertexArray::Create());
+			m_SquareVA = Hazel::VertexArray::Create();
 		}
 
 		//矩形背景
@@ -223,7 +224,7 @@ class Sandbox : public Hazel::Application
 public:
 	Sandbox()
 	{
-		PushLayer(new ExampleLayer());
+		PushLayer(new Sandbox2D());
 	}
 
 	~Sandbox()
