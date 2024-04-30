@@ -9,6 +9,7 @@
 #include "Hazel/Core/KeyCodes.h"
 #include "Hazel/Core/MouseButtonCodes.h"
 #include "Hazel/Core/Timestep.h"
+#include "Hazel/Core/Core.h"
 #include "Hazel/ImGui/ImGuiLayer.h"
 
 // ---Renderer------------------------
