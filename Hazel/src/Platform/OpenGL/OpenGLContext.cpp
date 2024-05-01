@@ -16,6 +16,8 @@ namespace Hazel
 
 	void OpenGLContext::Init()//封装Init函数，之前位于Windowswindow.cpp。添加了控制台输出指令
 	{
+		HZ_PROFILE_FUNCTION();
+
 		glfwMakeContextCurrent(m_WindowHandle);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 		HZ_CORE_ASSERT(status, "Failed to initialize Glad!");
@@ -28,6 +30,8 @@ namespace Hazel
 
 	void OpenGLContext::SwapBuffers()
 	{
+		HZ_PROFILE_FUNCTION();
+
 		glfwSwapBuffers(m_WindowHandle);
 	}
 

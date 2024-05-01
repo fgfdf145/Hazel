@@ -25,6 +25,8 @@ namespace Hazel
 
 	void ImGuiLayer::OnAttach()//初始化io和绑定，在这个层应用到程序时调用
 	{
+		HZ_PROFILE_FUNCTION();
+
 		IMGUI_CHECKVERSION();
 		ImGui::CreateContext();
 
@@ -57,6 +59,8 @@ namespace Hazel
 
 	void ImGuiLayer::OnDetach()//解除绑定分离api
 	{
+		HZ_PROFILE_FUNCTION();
+
 		ImGui_ImplOpenGL3_Shutdown();
 		ImGui_ImplGlfw_Shutdown();
 		ImGui::DestroyContext();
@@ -64,6 +68,7 @@ namespace Hazel
 
 	void ImGuiLayer::Begin()//用于渲染前的准备工作
 	{
+		HZ_PROFILE_FUNCTION();
 
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
@@ -73,9 +78,10 @@ namespace Hazel
 
 	void ImGuiLayer::End()//渲染所有的ImGui元素，并处理多视口的情况。
 	{
+		HZ_PROFILE_FUNCTION();
+
 		ImGuiIO& io = ImGui::GetIO();
-
-
+		
 		Application& app = Application::Get();
 		io.DisplaySize = ImVec2((float)app.GetWindow().GetWidth(), (float)app.GetWindow().GetHeight());
 		
