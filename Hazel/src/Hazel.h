@@ -9,7 +9,7 @@
 #include "Hazel/Core/KeyCodes.h"
 #include "Hazel/Core/MouseButtonCodes.h"
 #include "Hazel/Core/Timestep.h"
-#include "Hazel/Core/Core.h"
+#include "Hazel/Core/Base.h"
 #include "Hazel/ImGui/ImGuiLayer.h"
 
 // ---Renderer------------------------
@@ -23,6 +23,7 @@
 #include "Hazel/Renderer/OrthographicCamera.h"
 #include "Hazel/Renderer/Texture.h"
 #include "Hazel/Renderer/OrthographicCameraController.h"
+#include "Hazel/Renderer/Framebuffer.h"
 
 // ---Entry Point---------------------
 

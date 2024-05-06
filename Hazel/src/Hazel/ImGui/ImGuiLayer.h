@@ -9,7 +9,7 @@
 namespace Hazel 
 {
 	// 功能与名称一致
-	class HAZEL_API ImGuiLayer : public Layer
+	class  ImGuiLayer : public Layer
 	{
 	public:
 		ImGuiLayer();
