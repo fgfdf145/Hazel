@@ -144,6 +144,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Hazel-Editor\src\EditorLayer.h" />
     <ClInclude Include="src\Hazel.h" />
     <ClInclude Include="src\Hazel\Core\Application.h" />
     <ClInclude Include="src\Hazel\Core\Base.h" />
@@ -550,8 +551,11 @@
     <ClInclude Include="vendor\stb_image\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Hazel-Editor\src\EditorLayer.cpp" />
+    <ClCompile Include="src\Hazel-Editor\src\HazelEditorApp.cpp" />
     <ClCompile Include="src\Hazel\Core\Application.cpp" />
     <ClCompile Include="src\Hazel\Core\GLCall.cpp" />
+    <ClCompile Include="src\Hazel\Core\Window.cpp" />
     <ClCompile Include="src\Hazel\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Hazel\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Hazel\Core\Layer.cpp" />
@@ -592,6 +596,10 @@
     <ProjectReference Include="vendor\imgui\ImGui.vcxproj">
       <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Hazel-Editor\assets\shaders\Texture.glsl" />
+    <None Include="src\Hazel-Editor\imgui.ini" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
