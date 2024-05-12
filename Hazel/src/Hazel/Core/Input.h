@@ -2,7 +2,7 @@
 
 #include "Hazel/Core/Base.h"
 
-namespace Hazel 
+namespace Hazel
 {
 
 	class  Input
