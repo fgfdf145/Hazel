@@ -158,7 +158,7 @@ void ExampleLayer::OnUpdate(Hazel::Timestep ts)
 		{
 			glm::vec3 pos(x * 0.11f, y * 0.11f, 0.0f);
 			glm::mat4 transform = glm::translate(glm::mat4(1.0f), pos) * scale;
-			Hazel::Renderer::Submit(m_FlatColorShader, m_SquareVA, transform);
+			//Hazel::Renderer::Submit(m_FlatColorShader, m_SquareVA, transform);
 		}
 	}
 
