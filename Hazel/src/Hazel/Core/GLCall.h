@@ -1,5 +1,5 @@
 #pragma once
-#include"glew.h"
+#include "glew.h"
 
 #define ASSERT(x) if(!(x)) __debugbreak();
 #define GLCall(x) GLClearError();\

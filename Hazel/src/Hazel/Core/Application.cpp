@@ -6,7 +6,7 @@
 #include <glad/glad.h>
 
 #include "Hazel/Renderer/Renderer.h"
-#include <GLFW/glfw3.h>
+#include <glfw3.h>
 namespace Hazel 
 {
 

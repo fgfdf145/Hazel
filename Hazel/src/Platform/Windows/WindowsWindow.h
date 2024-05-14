@@ -3,7 +3,7 @@
 #include "Hazel/Core/Window.h"
 #include "Hazel/Renderer/GraphicsContext.h"
 
-#include <GLFW/glfw3.h>
+#include <glfw3.h>
 
 namespace Hazel {
 
