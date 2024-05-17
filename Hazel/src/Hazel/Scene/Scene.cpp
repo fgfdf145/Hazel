@@ -40,7 +40,7 @@ namespace Hazel {
 		auto group = m_Registry.group<TransformComponent>(entt::get<MeshComponent>);
 		for (auto entity : group)
 		{
-			auto& [transform, mesh] = group.get<TransformComponent, MeshComponent>(entity);
+			auto&[transform, mesh] = group.get<TransformComponent, MeshComponent>(entity);
 		}
 #endif
 	}

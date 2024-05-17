@@ -1,13 +1,10 @@
 #include "hzpch.h"
-#include "OpenGLTexture.h"
+#include "Platform/OpenGL/OpenGLTexture.h"
 
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+#include <stb_image.h>
 
-#include <glad/glad.h>
+namespace Hazel {
 
-namespace Hazel 
-{
 	OpenGLTexture2D::OpenGLTexture2D(uint32_t width, uint32_t height)
 		: m_Width(width), m_Height(height)
 	{
@@ -58,6 +55,7 @@ namespace Hazel
 		m_DataFormat = dataFormat;
 
 		HZ_CORE_ASSERT(internalFormat & dataFormat, "Format not supported!");
+
 		glCreateTextures(GL_TEXTURE_2D, 1, &m_RendererID);
 		glTextureStorage2D(m_RendererID, 1, internalFormat, m_Width, m_Height);
 
@@ -75,6 +73,7 @@ namespace Hazel
 	OpenGLTexture2D::~OpenGLTexture2D()
 	{
 		HZ_PROFILE_FUNCTION();
+
 		glDeleteTextures(1, &m_RendererID);
 	}
 
@@ -82,7 +81,7 @@ namespace Hazel
 	{
 		HZ_PROFILE_FUNCTION();
 
-		uint32_t bpp = m_DataFormat ==GL_RGBA ? 4 : 3;
+		uint32_t bpp = m_DataFormat == GL_RGBA ? 4 : 3;
 		HZ_CORE_ASSERT(size == m_Width * m_Height * bpp, "Data must be entire texture!");
 		glTextureSubImage2D(m_RendererID, 0, 0, 0, m_Width, m_Height, m_DataFormat, GL_UNSIGNED_BYTE, data);
 	}
@@ -93,5 +92,4 @@ namespace Hazel
 
 		glBindTextureUnit(slot, m_RendererID);
 	}
-
 }

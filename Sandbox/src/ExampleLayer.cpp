@@ -5,7 +5,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-ExampleLayer::ExampleLayer()
+ExampleLayer::ExampleLayer() 
 	: Layer("ExampleLayer"), m_CameraController(1280.0f / 720.0f)
 {
 	m_VertexArray = Hazel::VertexArray::Create();
@@ -136,7 +136,7 @@ void ExampleLayer::OnDetach()
 {
 }
 
-void ExampleLayer::OnUpdate(Hazel::Timestep ts)
+void ExampleLayer::OnUpdate(Hazel::Timestep ts) 
 {
 	// Update
 	m_CameraController.OnUpdate(ts);
@@ -158,7 +158,7 @@ void ExampleLayer::OnUpdate(Hazel::Timestep ts)
 		{
 			glm::vec3 pos(x * 0.11f, y * 0.11f, 0.0f);
 			glm::mat4 transform = glm::translate(glm::mat4(1.0f), pos) * scale;
-			//Hazel::Renderer::Submit(m_FlatColorShader, m_SquareVA, transform);
+			Hazel::Renderer::Submit(m_FlatColorShader, m_SquareVA, transform);
 		}
 	}
 
@@ -175,14 +175,14 @@ void ExampleLayer::OnUpdate(Hazel::Timestep ts)
 	Hazel::Renderer::EndScene();
 }
 
-void ExampleLayer::OnImGuiRender()
+void ExampleLayer::OnImGuiRender() 
 {
 	ImGui::Begin("Settings");
 	ImGui::ColorEdit3("Square Color", glm::value_ptr(m_SquareColor));
 	ImGui::End();
 }
 
-void ExampleLayer::OnEvent(Hazel::Event& e)
+void ExampleLayer::OnEvent(Hazel::Event& e) 
 {
 	m_CameraController.OnEvent(e);
 }

@@ -1,12 +1,10 @@
 #include "hzpch.h"
-#include "OpenGLContext.h"
+#include "Platform/OpenGL/OpenGLContext.h"
 
-#include <glfw3.h>
+#include <GLFW/glfw3.h>
 #include <glad/glad.h>
-#include <GL/GL.h>
 
-namespace Hazel 
-{
+namespace Hazel {
 
 	OpenGLContext::OpenGLContext(GLFWwindow* windowHandle)
 		: m_WindowHandle(windowHandle)
@@ -14,7 +12,7 @@ namespace Hazel
 		HZ_CORE_ASSERT(windowHandle, "Window handle is null!")
 	}
 
-	void OpenGLContext::Init()//封装Init函数，之前位于Windowswindow.cpp。添加了控制台输出指令
+	void OpenGLContext::Init()
 	{
 		HZ_PROFILE_FUNCTION();
 
@@ -23,9 +21,18 @@ namespace Hazel
 		HZ_CORE_ASSERT(status, "Failed to initialize Glad!");
 
 		HZ_CORE_INFO("OpenGL Info:");
-		HZ_CORE_INFO("Vendor: {0}", glGetString(GL_VENDOR));
-		HZ_CORE_INFO("Renderer: {0}", glGetString(GL_RENDERER));
-		HZ_CORE_INFO("Version: {0}", glGetString(GL_VERSION));
+		HZ_CORE_INFO("  Vendor: {0}", glGetString(GL_VENDOR));
+		HZ_CORE_INFO("  Renderer: {0}", glGetString(GL_RENDERER));
+		HZ_CORE_INFO("  Version: {0}", glGetString(GL_VERSION));
+
+	#ifdef HZ_ENABLE_ASSERTS
+		int versionMajor;
+		int versionMinor;
+		glGetIntegerv(GL_MAJOR_VERSION, &versionMajor);
+		glGetIntegerv(GL_MINOR_VERSION, &versionMinor);
+
+		HZ_CORE_ASSERT(versionMajor > 4 || (versionMajor == 4 && versionMinor >= 5), "Hazel requires at least OpenGL version 4.5!");
+	#endif
 	}
 
 	void OpenGLContext::SwapBuffers()

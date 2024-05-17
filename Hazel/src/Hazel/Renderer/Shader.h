@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include <glm/glm.hpp>
 #include <unordered_map>
+
 #include <glm/glm.hpp>
-namespace Hazel 
-{
-	//功能与名称一致
+
+namespace Hazel {
+
 	class Shader
 	{
 	public:
@@ -28,7 +28,6 @@ namespace Hazel
 		static Ref<Shader> Create(const std::string& name, const std::string& vertexSrc, const std::string& fragmentSrc);
 	};
 
-	//添加shader行为
 	class ShaderLibrary
 	{
 	public:
@@ -39,8 +38,9 @@ namespace Hazel
 
 		Ref<Shader> Get(const std::string& name);
 
-		bool Exists(const std::string& name)const;
+		bool Exists(const std::string& name) const;
 	private:
 		std::unordered_map<std::string, Ref<Shader>> m_Shaders;
 	};
+
 }
