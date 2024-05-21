@@ -77,7 +77,7 @@
       <PrecompiledHeaderFile>hzpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLFW_INCLUDE_NONE;HZ_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;vendor\stb_image;vendor\entt\include;vendor\GLEW\include\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;vendor\stb_image;vendor\entt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
@@ -151,7 +151,6 @@
     <ClInclude Include="src\Hazel\Core\Application.h" />
     <ClInclude Include="src\Hazel\Core\Base.h" />
     <ClInclude Include="src\Hazel\Core\EntryPoint.h" />
-    <ClInclude Include="src\Hazel\Core\GLCall.h" />
     <ClInclude Include="src\Hazel\Core\Input.h" />
     <ClInclude Include="src\Hazel\Core\KeyCodes.h" />
     <ClInclude Include="src\Hazel\Core\Layer.h" />
@@ -561,7 +560,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Hazel\Core\Application.cpp" />
-    <ClCompile Include="src\Hazel\Core\GLCall.cpp" />
     <ClCompile Include="src\Hazel\Core\Layer.cpp" />
     <ClCompile Include="src\Hazel\Core\LayerStack.cpp" />
     <ClCompile Include="src\Hazel\Core\Log.cpp" />
