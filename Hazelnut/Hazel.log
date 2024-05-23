@@ -1,5 +1,5 @@
-[09:42:31] [info] HAZEL: Creating window Hazelnut (1280, 720)
-[09:42:31] [info] HAZEL: OpenGL Info:
-[09:42:31] [info] HAZEL:   Vendor: Intel
-[09:42:31] [info] HAZEL:   Renderer: Intel(R) RaptorLake-S Mobile Graphics Controller
-[09:42:31] [info] HAZEL:   Version: 4.6.0 - Build 31.0.101.5186
+[10:12:11] [info] HAZEL: Creating window Hazelnut (1280, 720)
+[10:12:11] [info] HAZEL: OpenGL Info:
+[10:12:11] [info] HAZEL:   Vendor: NVIDIA Corporation
+[10:12:11] [info] HAZEL:   Renderer: NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2
+[10:12:11] [info] HAZEL:   Version: 4.6.0 NVIDIA 555.85
