@@ -4,6 +4,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+
 namespace Hazel {
 
 	EditorLayer::EditorLayer()
@@ -26,7 +27,10 @@ namespace Hazel {
 
 		// Entity
 		auto square = m_ActiveScene->CreateEntity("Green Square");
-		square.AddComponent<SpriteRendererComponent>(glm::vec4{ 0.0f, 1.0f, 0.0f, 1.0f });
+		square.AddComponent<SpriteRendererComponent>(glm::vec4{0.0f, 1.0f, 0.0f, 1.0f});
+
+		auto redSquare = m_ActiveScene->CreateEntity("Red Square");
+		redSquare.AddComponent<SpriteRendererComponent>(glm::vec4{ 1.0f, 0.0f, 0.0f, 1.0f });
 
 		m_SquareEntity = square;
 
@@ -35,25 +39,25 @@ namespace Hazel {
 
 		m_SecondCamera = m_ActiveScene->CreateEntity("Clip-Space Entity");
 		auto& cc = m_SecondCamera.AddComponent<CameraComponent>();
-
 		cc.Primary = false;
 
 		class CameraController : public ScriptableEntity
 		{
 		public:
-			void OnCreate()
+			virtual void OnCreate() override
 			{
 				auto& transform = GetComponent<TransformComponent>().Transform;
 				transform[3][0] = rand() % 10 - 5.0f;
 			}
 
-			void OnDestroy()
+			virtual void OnDestroy() override
 			{
 			}
 
-			void OnUpdate(Timestep ts)
+			virtual void OnUpdate(Timestep ts) override
 			{
 				auto& transform = GetComponent<TransformComponent>().Transform;
+
 				float speed = 5.0f;
 
 				if (Input::IsKeyPressed(Key::A))
@@ -89,6 +93,7 @@ namespace Hazel {
 		{
 			m_Framebuffer->Resize((uint32_t)m_ViewportSize.x, (uint32_t)m_ViewportSize.y);
 			m_CameraController.OnResize(m_ViewportSize.x, m_ViewportSize.y);
+
 			m_ActiveScene->OnViewportResize((uint32_t)m_ViewportSize.x, (uint32_t)m_ViewportSize.y);
 		}
 
@@ -102,12 +107,8 @@ namespace Hazel {
 		RenderCommand::SetClearColor({ 0.1f, 0.1f, 0.1f, 1 });
 		RenderCommand::Clear();
 
-		Renderer2D::BeginScene(m_CameraController.GetCamera());
-
 		// Update scene
 		m_ActiveScene->OnUpdate(ts);
-
-		Renderer2D::EndScene();
 
 		m_Framebuffer->Unbind();
 	}
@@ -198,7 +199,8 @@ namespace Hazel {
 			ImGui::Separator();
 		}
 
-		ImGui::DragFloat3("Camera Transform",glm::value_ptr(m_CameraEntity.GetComponent<TransformComponent>().Transform[3]));
+		ImGui::DragFloat3("Camera Transform",
+			glm::value_ptr(m_CameraEntity.GetComponent<TransformComponent>().Transform[3]));
 
 		if (ImGui::Checkbox("Camera A", &m_PrimaryCamera))
 		{
@@ -212,6 +214,7 @@ namespace Hazel {
 			if (ImGui::DragFloat("Second Camera Ortho Size", &orthoSize))
 				camera.SetOrthographicSize(orthoSize);
 		}
+
 
 		ImGui::End();
 

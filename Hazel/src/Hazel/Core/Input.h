@@ -1,6 +1,7 @@
 #pragma once
 
 #include <glm/glm.hpp>
+
 #include "Hazel/Core/KeyCodes.h"
 #include "Hazel/Core/MouseCodes.h"
 

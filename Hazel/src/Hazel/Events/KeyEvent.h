@@ -35,7 +35,7 @@ namespace Hazel {
 
 		EVENT_CLASS_TYPE(KeyPressed)
 	private:
-		uint16_t  m_RepeatCount;
+		uint16_t m_RepeatCount;
 	};
 
 	class KeyReleasedEvent : public KeyEvent
