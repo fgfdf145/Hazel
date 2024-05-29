@@ -5,6 +5,7 @@
 #include <glm/gtc/type_ptr.hpp>
 
 #include "Hazel/Scene/SceneSerializer.h"
+
 #include "Hazel/Utils/PlatformUtils.h"
 
 namespace Hazel {
@@ -178,10 +179,9 @@ namespace Hazel {
 				// Disabling fullscreen would allow the window to be moved to the front of other windows, 
 				// which we can't undo at the moment without finer window depth/z control.
 				//ImGui::MenuItem("Fullscreen", NULL, &opt_fullscreen_persistant);1
-
 				if (ImGui::MenuItem("New", "Ctrl+N"))
 					NewScene();
-				
+
 				if (ImGui::MenuItem("Open...", "Ctrl+O"))
 					OpenScene();
 
@@ -229,6 +229,7 @@ namespace Hazel {
 	void EditorLayer::OnEvent(Event& e)
 	{
 		m_CameraController.OnEvent(e);
+
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<KeyPressedEvent>(HZ_BIND_EVENT_FN(EditorLayer::OnKeyPressed));
 	}
@@ -243,27 +244,27 @@ namespace Hazel {
 		bool shift = Input::IsKeyPressed(Key::LeftShift) || Input::IsKeyPressed(Key::RightShift);
 		switch (e.GetKeyCode())
 		{
-		case Key::N:
-		{
-			if (control)
-				NewScene();
+			case Key::N:
+			{
+				if (control)
+					NewScene();
 
-			break;
-		}
-		case Key::O:
-		{
-			if (control)
-				OpenScene();
+				break;
+			}
+			case Key::O:
+			{
+				if (control)
+					OpenScene();
 
-			break;
-		}
-		case Key::S:
-		{
-			if (control && shift)
-				SaveSceneAs();
+				break;
+			}
+			case Key::S:
+			{
+				if (control && shift)
+					SaveSceneAs();
 
-			break;
-		}
+				break;
+			}
 		}
 	}
 
