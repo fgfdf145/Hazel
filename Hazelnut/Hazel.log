@@ -1,10 +1,175 @@
-[19:42:05] [info] HAZEL: Creating window Hazelnut (1600, 900)
-[19:42:05] [info] HAZEL: OpenGL Info:
-[19:42:05] [info] HAZEL:   Vendor: NVIDIA Corporation
-[19:42:05] [info] HAZEL:   Renderer: NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2
-[19:42:05] [info] HAZEL:   Version: 4.6.0 NVIDIA 555.85
-[19:42:09] [trace] HAZEL: Deserializing scene 'Untitled'
-[19:42:09] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Top
-[19:42:09] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera
-[19:42:09] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Right
-[19:42:09] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Left
+[10:06:44] [info] HAZEL: Creating window Hazelnut (1600, 900)
+[10:06:44] [info] HAZEL: OpenGL Info:
+[10:06:44] [info] HAZEL:   Vendor: NVIDIA Corporation
+[10:06:44] [info] HAZEL:   Renderer: NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2
+[10:06:44] [info] HAZEL:   Version: 4.6.0 NVIDIA 555.85
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:44] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [trace] HAZEL: Deserializing scene 'Untitled'
+[10:06:49] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Top
+[10:06:49] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera
+[10:06:49] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Right
+[10:06:49] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Left
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:49] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
+[10:06:50] [warning] HAZEL: Pixel data = 1036831949
