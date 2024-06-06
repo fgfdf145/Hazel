@@ -37,7 +37,7 @@ namespace Hazel {
 #if 0
 		// Entity
 		auto square = m_ActiveScene->CreateEntity("Green Square");
-		square.AddComponent<SpriteRendererComponent>(glm::vec4{0.0f, 1.0f, 0.0f, 1.0f});
+		square.AddComponent<SpriteRendererComponent>(glm::vec4{ 0.0f, 1.0f, 0.0f, 1.0f });
 
 		auto redSquare = m_ActiveScene->CreateEntity("Red Square");
 		redSquare.AddComponent<SpriteRendererComponent>(glm::vec4{ 1.0f, 0.0f, 0.0f, 1.0f });
@@ -130,7 +130,7 @@ namespace Hazel {
 		auto [mx, my] = ImGui::GetMousePos();
 		mx -= m_ViewportBounds[0].x;
 		my -= m_ViewportBounds[0].y;
-		glm::vec2 viewportSize = m_ViewportBounds[1] - m_ViewportBounds[0];
+		glm::vec2 viewportSize = m_ViewportSize;
 		my = viewportSize.y - my;
 		int mouseX = (int)mx;
 		int mouseY = (int)my;
@@ -138,7 +138,8 @@ namespace Hazel {
 		if (mouseX >= 0 && mouseY >= 0 && mouseX < (int)viewportSize.x && mouseY < (int)viewportSize.y)
 		{
 			int pixelData = m_Framebuffer->ReadPixel(1, mouseX, mouseY);
-			HZ_CORE_WARN("Pixel data = {0}", pixelData);
+			//HZ_CORE_WARN("Pixel data = {0}", pixelData);
+			//m_HoveredEntity = pixelData == -1 ? Entity() : Entity((entt::entity)pixelData, m_ActiveScene.get());
 		}
 
 		m_Framebuffer->Unbind();
@@ -224,6 +225,11 @@ namespace Hazel {
 		m_SceneHierarchyPanel.OnImGuiRender();
 
 		ImGui::Begin("Stats");
+
+		std::string name = "None";
+		if (m_HoveredEntity)
+			name = m_HoveredEntity.GetComponent<TagComponent>().Tag;
+		ImGui::Text("Hovered Entity: %s", name.c_str());
 
 		auto stats = Renderer2D::GetStats();
 		ImGui::Text("Renderer2D Stats:");
@@ -326,40 +332,40 @@ namespace Hazel {
 		bool shift = Input::IsKeyPressed(Key::LeftShift) || Input::IsKeyPressed(Key::RightShift);
 		switch (e.GetKeyCode())
 		{
-			case Key::N:
-			{
-				if (control)
-					NewScene();
+		case Key::N:
+		{
+			if (control)
+				NewScene();
 
-				break;
-			}
-			case Key::O:
-			{
-				if (control)
-					OpenScene();
+			break;
+		}
+		case Key::O:
+		{
+			if (control)
+				OpenScene();
 
-				break;
-			}
-			case Key::S:
-			{
-				if (control && shift)
-					SaveSceneAs();
+			break;
+		}
+		case Key::S:
+		{
+			if (control && shift)
+				SaveSceneAs();
 
-				break;
-			}
+			break;
+		}
 
-			case Key::Q:
-				m_GizmoType = -1;
-				break;
-			case Key::W:
-				m_GizmoType = ImGuizmo::OPERATION::TRANSLATE;
-				break;
-			case Key::E:
-				m_GizmoType = ImGuizmo::OPERATION::ROTATE;
-				break;
-			case Key::R:
-				m_GizmoType = ImGuizmo::OPERATION::SCALE;
-				break;
+		case Key::Q:
+			m_GizmoType = -1;
+			break;
+		case Key::W:
+			m_GizmoType = ImGuizmo::OPERATION::TRANSLATE;
+			break;
+		case Key::E:
+			m_GizmoType = ImGuizmo::OPERATION::ROTATE;
+			break;
+		case Key::R:
+			m_GizmoType = ImGuizmo::OPERATION::SCALE;
+			break;
 		}
 	}
 
