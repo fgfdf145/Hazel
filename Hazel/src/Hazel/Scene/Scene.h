@@ -1,12 +1,10 @@
 #pragma once
 
-#include "entt.hpp"
-
-
 #include "Hazel/Core/Timestep.h"
 #include "Hazel/Renderer/EditorCamera.h"
 
 #include "entt.hpp"
+
 namespace Hazel {
 
 	class Entity;

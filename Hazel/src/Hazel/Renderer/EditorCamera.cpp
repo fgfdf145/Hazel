@@ -1,12 +1,11 @@
 #include "hzpch.h"
-
-#include "Hazel/Renderer/EditorCamera.h"
+#include "EditorCamera.h"
 
 #include "Hazel/Core/Input.h"
 #include "Hazel/Core/KeyCodes.h"
 #include "Hazel/Core/MouseCodes.h"
 
-#include <GLFW/glfw3.h>
+#include <glfw/glfw3.h>
 
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/quaternion.hpp>
@@ -37,7 +36,7 @@ namespace Hazel {
 
 	std::pair<float, float> EditorCamera::PanSpeed() const
 	{
-		float x = std::min(m_ViewportHeight / 1000.0f, 2.4f);
+		float x = std::min(m_ViewportWidth / 1000.0f, 2.4f); // max = 2.4f
 		float xFactor = 0.0366f * (x * x) - 0.1778f * x + 0.3021f;
 
 		float y = std::min(m_ViewportHeight / 1000.0f, 2.4f); // max = 2.4f
@@ -141,4 +140,5 @@ namespace Hazel {
 	{
 		return glm::quat(glm::vec3(-m_Pitch, -m_Yaw, 0.0f));
 	}
+
 }

@@ -80,16 +80,15 @@ namespace Hazel {
 		{
 			switch (format)
 			{
-			case FramebufferTextureFormat::RGBA8:       return GL_RGBA8;
-			case FramebufferTextureFormat::RED_INTEGER: return GL_RED_INTEGER;
+				case FramebufferTextureFormat::RGBA8:       return GL_RGBA8;
+				case FramebufferTextureFormat::RED_INTEGER: return GL_RED_INTEGER;
 			}
 
 			HZ_CORE_ASSERT(false);
 			return 0;
 		}
-	}
 
-	
+	}
 
 	OpenGLFramebuffer::OpenGLFramebuffer(const FramebufferSpecification& spec)
 		: m_Specification(spec)
@@ -145,6 +144,7 @@ namespace Hazel {
 						break;
 					case FramebufferTextureFormat::RED_INTEGER:
 						Utils::AttachColorTexture(m_ColorAttachments[i], m_Specification.Samples, GL_R32I, GL_RED_INTEGER, m_Specification.Width, m_Specification.Height, i);
+						break;
 				}
 			}
 		}
@@ -221,4 +221,5 @@ namespace Hazel {
 		glClearTexImage(m_ColorAttachments[attachmentIndex], 0,
 			Utils::HazelFBTextureFormatToGL(spec.TextureFormat), GL_INT, &value);
 	}
+
 }

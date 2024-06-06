@@ -72,7 +72,6 @@ namespace Hazel {
 				case ShaderDataType::Float2:
 				case ShaderDataType::Float3:
 				case ShaderDataType::Float4:
-
 				{
 					glEnableVertexAttribArray(m_VertexBufferIndex);
 					glVertexAttribPointer(m_VertexBufferIndex,
@@ -84,7 +83,6 @@ namespace Hazel {
 					m_VertexBufferIndex++;
 					break;
 				}
-
 				case ShaderDataType::Int:
 				case ShaderDataType::Int2:
 				case ShaderDataType::Int3:

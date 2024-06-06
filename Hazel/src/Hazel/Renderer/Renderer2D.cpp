@@ -16,7 +16,7 @@ namespace Hazel {
 		glm::vec2 TexCoord;
 		float TexIndex;
 		float TilingFactor;
-
+		
 		// Editor-only
 		int EntityID;
 	};
@@ -234,6 +234,7 @@ namespace Hazel {
 			s_Data.QuadVertexBufferPtr->TexCoord = textureCoords[i];
 			s_Data.QuadVertexBufferPtr->TexIndex = textureIndex;
 			s_Data.QuadVertexBufferPtr->TilingFactor = tilingFactor;
+			s_Data.QuadVertexBufferPtr->EntityID = entityID;
 			s_Data.QuadVertexBufferPtr++;
 		}
 
@@ -324,7 +325,6 @@ namespace Hazel {
 	{
 		DrawQuad(transform, src.Color, entityID);
 	}
-
 
 	void Renderer2D::ResetStats()
 	{
