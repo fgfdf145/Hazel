@@ -33,6 +33,7 @@ project "Hazelnut"
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
+		defines "GLM_ENABLE_EXPERIMENTAL"
 		runtime "Debug"
 		symbols "on"
 		

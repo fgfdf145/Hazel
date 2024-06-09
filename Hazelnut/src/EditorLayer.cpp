@@ -12,6 +12,7 @@
 
 #include "Hazel/Math/Math.h"
 
+#define GLM_ENABLE_EXPERIMENTAL
 namespace Hazel {
 
 	extern const std::filesystem::path g_AssetPath;
@@ -503,12 +504,13 @@ namespace Hazel {
 	void EditorLayer::OnScenePlay()
 	{
 		m_SceneState = SceneState::Play;
+		m_ActiveScene->OnRuntimeStart();
 	}
 
 	void EditorLayer::OnSceneStop()
 	{
 		m_SceneState = SceneState::Edit;
-
+		m_ActiveScene->OnRuntimeStop();
 	}
 
 }
