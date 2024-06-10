@@ -16,14 +16,14 @@ namespace Hazel {
 
 		virtual void OnAttach() override;
 		virtual void OnDetach() override;
-
+		void SaveScene();
 		void OnUpdate(Timestep ts) override;
 		virtual void OnImGuiRender() override;
 		void OnEvent(Event& e) override;
 	private:
 		bool OnKeyPressed(KeyPressedEvent& e);
 		bool OnMouseButtonPressed(MouseButtonPressedEvent& e);
-
+		void SerializeScene(Ref<Scene> scene, const std::filesystem::path& path);
 		void NewScene();
 		void OpenScene();
 		void OpenScene(const std::filesystem::path& path);
@@ -31,7 +31,7 @@ namespace Hazel {
 
 		void OnScenePlay();
 		void OnSceneStop();
-
+		void OnDuplicateEntity();
 		// UI Panels
 		void UI_Toolbar();
 	private:
@@ -43,6 +43,8 @@ namespace Hazel {
 		Ref<Framebuffer> m_Framebuffer;
 
 		Ref<Scene> m_ActiveScene;
+		Ref<Scene> m_EditorScene;
+		std::filesystem::path m_EditorScenePath;
 		Entity m_SquareEntity;
 		Entity m_CameraEntity;
 		Entity m_SecondCamera;
