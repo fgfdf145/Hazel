@@ -23,6 +23,9 @@ namespace Hazel {
 	private:
 		bool OnKeyPressed(KeyPressedEvent& e);
 		bool OnMouseButtonPressed(MouseButtonPressedEvent& e);
+
+		void OnOverlayRender();
+
 		void SerializeScene(Ref<Scene> scene, const std::filesystem::path& path);
 		void NewScene();
 		void OpenScene();
@@ -64,6 +67,8 @@ namespace Hazel {
 		glm::vec4 m_SquareColor = { 0.2f, 0.3f, 0.8f, 1.0f };
 
 		int m_GizmoType = -1;
+
+		bool m_ShowPhysicsColliders = false;
 
 		enum class SceneState
 		{
