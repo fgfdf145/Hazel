@@ -1,50 +1,50 @@
-[10:31:23] [info] HAZEL: Creating window Hazelnut (1600, 900)
-[10:31:23] [info] HAZEL: OpenGL Info:
-[10:31:23] [info] HAZEL:   Vendor: Intel
-[10:31:23] [info] HAZEL:   Renderer: Intel(R) RaptorLake-S Mobile Graphics Controller
-[10:31:23] [info] HAZEL:   Version: 4.6.0 - Build 31.0.101.5186
-[10:31:23] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Quad.glsl
-[10:31:23] [trace] HAZEL:     1 uniform buffers
-[10:31:23] [trace] HAZEL:     0 resources
-[10:31:23] [trace] HAZEL: Uniform buffers:
-[10:31:23] [trace] HAZEL:   _46_48
-[10:31:23] [trace] HAZEL:     Size = 64
-[10:31:23] [trace] HAZEL:     Binding = 0
-[10:31:23] [trace] HAZEL:     Members = 1
-[10:31:23] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Quad.glsl
-[10:31:23] [trace] HAZEL:     0 uniform buffers
-[10:31:23] [trace] HAZEL:     1 resources
-[10:31:23] [trace] HAZEL: Uniform buffers:
-[10:31:23] [warning] HAZEL: Shader creation took 32.7649 ms
-[10:31:23] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Circle.glsl
-[10:31:23] [trace] HAZEL:     1 uniform buffers
-[10:31:23] [trace] HAZEL:     0 resources
-[10:31:23] [trace] HAZEL: Uniform buffers:
-[10:31:23] [trace] HAZEL:   _47_49
-[10:31:23] [trace] HAZEL:     Size = 64
-[10:31:23] [trace] HAZEL:     Binding = 0
-[10:31:23] [trace] HAZEL:     Members = 1
-[10:31:23] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Circle.glsl
-[10:31:23] [trace] HAZEL:     0 uniform buffers
-[10:31:23] [trace] HAZEL:     0 resources
-[10:31:23] [trace] HAZEL: Uniform buffers:
-[10:31:23] [warning] HAZEL: Shader creation took 6.9753 ms
-[10:31:23] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Line.glsl
-[10:31:23] [trace] HAZEL:     1 uniform buffers
-[10:31:23] [trace] HAZEL:     0 resources
-[10:31:23] [trace] HAZEL: Uniform buffers:
-[10:31:23] [trace] HAZEL:   _30_32
-[10:31:23] [trace] HAZEL:     Size = 64
-[10:31:23] [trace] HAZEL:     Binding = 0
-[10:31:23] [trace] HAZEL:     Members = 1
-[10:31:23] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Line.glsl
-[10:31:23] [trace] HAZEL:     0 uniform buffers
-[10:31:23] [trace] HAZEL:     0 resources
-[10:31:23] [trace] HAZEL: Uniform buffers:
-[10:31:23] [warning] HAZEL: Shader creation took 6.3066 ms
-[10:31:33] [trace] HAZEL: Deserializing scene 'Untitled'
-[10:31:33] [trace] HAZEL: Deserialized entity with ID = 16672940118998907085, name = Floor
-[10:31:33] [trace] HAZEL: Deserialized entity with ID = 4793924497264767156, name = Camera
-[10:31:33] [trace] HAZEL: Deserialized entity with ID = 15045535320033348975, name = Sprite
-[10:31:33] [trace] HAZEL: Deserialized entity with ID = 5134011587522944740, name = Floor
-[10:31:33] [trace] HAZEL: Deserialized entity with ID = 8804479042241551551, name = Circle
+[10:53:28] [info] HAZEL: Creating window Hazelnut (1600, 900)
+[10:53:28] [info] HAZEL: OpenGL Info:
+[10:53:28] [info] HAZEL:   Vendor: Intel
+[10:53:28] [info] HAZEL:   Renderer: Intel(R) RaptorLake-S Mobile Graphics Controller
+[10:53:28] [info] HAZEL:   Version: 4.6.0 - Build 31.0.101.5186
+[10:53:28] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Quad.glsl
+[10:53:28] [trace] HAZEL:     1 uniform buffers
+[10:53:28] [trace] HAZEL:     0 resources
+[10:53:28] [trace] HAZEL: Uniform buffers:
+[10:53:28] [trace] HAZEL:   _46_48
+[10:53:28] [trace] HAZEL:     Size = 64
+[10:53:28] [trace] HAZEL:     Binding = 0
+[10:53:28] [trace] HAZEL:     Members = 1
+[10:53:28] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Quad.glsl
+[10:53:28] [trace] HAZEL:     0 uniform buffers
+[10:53:28] [trace] HAZEL:     1 resources
+[10:53:28] [trace] HAZEL: Uniform buffers:
+[10:53:28] [warning] HAZEL: Shader creation took 34.788 ms
+[10:53:28] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Circle.glsl
+[10:53:28] [trace] HAZEL:     1 uniform buffers
+[10:53:28] [trace] HAZEL:     0 resources
+[10:53:28] [trace] HAZEL: Uniform buffers:
+[10:53:28] [trace] HAZEL:   _47_49
+[10:53:28] [trace] HAZEL:     Size = 64
+[10:53:28] [trace] HAZEL:     Binding = 0
+[10:53:28] [trace] HAZEL:     Members = 1
+[10:53:28] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Circle.glsl
+[10:53:28] [trace] HAZEL:     0 uniform buffers
+[10:53:28] [trace] HAZEL:     0 resources
+[10:53:28] [trace] HAZEL: Uniform buffers:
+[10:53:28] [warning] HAZEL: Shader creation took 7.0475 ms
+[10:53:28] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Line.glsl
+[10:53:28] [trace] HAZEL:     1 uniform buffers
+[10:53:28] [trace] HAZEL:     0 resources
+[10:53:28] [trace] HAZEL: Uniform buffers:
+[10:53:28] [trace] HAZEL:   _30_32
+[10:53:28] [trace] HAZEL:     Size = 64
+[10:53:28] [trace] HAZEL:     Binding = 0
+[10:53:28] [trace] HAZEL:     Members = 1
+[10:53:28] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Line.glsl
+[10:53:28] [trace] HAZEL:     0 uniform buffers
+[10:53:28] [trace] HAZEL:     0 resources
+[10:53:28] [trace] HAZEL: Uniform buffers:
+[10:53:28] [warning] HAZEL: Shader creation took 5.6416 ms
+[10:53:32] [trace] HAZEL: Deserializing scene 'Untitled'
+[10:53:32] [trace] HAZEL: Deserialized entity with ID = 16672940118998907085, name = Floor
+[10:53:32] [trace] HAZEL: Deserialized entity with ID = 4793924497264767156, name = Camera
+[10:53:32] [trace] HAZEL: Deserialized entity with ID = 15045535320033348975, name = Sprite
+[10:53:32] [trace] HAZEL: Deserialized entity with ID = 5134011587522944740, name = Floor
+[10:53:32] [trace] HAZEL: Deserialized entity with ID = 8804479042241551551, name = Circle
