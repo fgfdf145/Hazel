@@ -33,14 +33,8 @@ project "Hazelnut"
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
-		defines "GLM_ENABLE_EXPERIMENTAL"
 		runtime "Debug"
 		symbols "on"
-		
-		postbuildcommands
-		{
-			"{COPYDIR} \"%{LibraryDir.VulkanSDK_DebugDLL}\" \"%{cfg.targetdir}\""
-		}
 
 	filter "configurations:Release"
 		defines "HZ_RELEASE"
