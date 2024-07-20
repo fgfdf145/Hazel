@@ -1,49 +1,49 @@
-[23:18:44] [info] HAZEL: Creating window Hazelnut (1600, 900)
-[23:18:44] [info] HAZEL: OpenGL Info:
-[23:18:44] [info] HAZEL:   Vendor: NVIDIA Corporation
-[23:18:44] [info] HAZEL:   Renderer: NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2
-[23:18:44] [info] HAZEL:   Version: 4.6.0 NVIDIA 560.70
-[23:18:44] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Quad.glsl
-[23:18:44] [trace] HAZEL:     1 uniform buffers
-[23:18:44] [trace] HAZEL:     0 resources
-[23:18:44] [trace] HAZEL: Uniform buffers:
-[23:18:44] [trace] HAZEL:   _46_48
-[23:18:44] [trace] HAZEL:     Size = 64
-[23:18:44] [trace] HAZEL:     Binding = 0
-[23:18:44] [trace] HAZEL:     Members = 1
-[23:18:44] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Quad.glsl
-[23:18:44] [trace] HAZEL:     0 uniform buffers
-[23:18:44] [trace] HAZEL:     1 resources
-[23:18:44] [trace] HAZEL: Uniform buffers:
-[23:18:44] [warning] HAZEL: Shader creation took 8.2059 ms
-[23:18:44] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Circle.glsl
-[23:18:44] [trace] HAZEL:     1 uniform buffers
-[23:18:44] [trace] HAZEL:     0 resources
-[23:18:44] [trace] HAZEL: Uniform buffers:
-[23:18:44] [trace] HAZEL:   _47_49
-[23:18:44] [trace] HAZEL:     Size = 64
-[23:18:44] [trace] HAZEL:     Binding = 0
-[23:18:44] [trace] HAZEL:     Members = 1
-[23:18:44] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Circle.glsl
-[23:18:44] [trace] HAZEL:     0 uniform buffers
-[23:18:44] [trace] HAZEL:     0 resources
-[23:18:44] [trace] HAZEL: Uniform buffers:
-[23:18:44] [warning] HAZEL: Shader creation took 2.8715 ms
-[23:18:44] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Line.glsl
-[23:18:44] [trace] HAZEL:     1 uniform buffers
-[23:18:44] [trace] HAZEL:     0 resources
-[23:18:44] [trace] HAZEL: Uniform buffers:
-[23:18:44] [trace] HAZEL:   _30_32
-[23:18:44] [trace] HAZEL:     Size = 64
-[23:18:44] [trace] HAZEL:     Binding = 0
-[23:18:44] [trace] HAZEL:     Members = 1
-[23:18:44] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Line.glsl
-[23:18:44] [trace] HAZEL:     0 uniform buffers
-[23:18:44] [trace] HAZEL:     0 resources
-[23:18:44] [trace] HAZEL: Uniform buffers:
-[23:18:44] [warning] HAZEL: Shader creation took 2.7668 ms
-[23:18:46] [trace] HAZEL: Deserializing scene 'Untitled'
-[23:18:46] [trace] HAZEL: Deserialized entity with ID = 8244940659429586525, name = Left
-[23:18:46] [trace] HAZEL: Deserialized entity with ID = 2335431429201735937, name = Right
-[23:18:46] [trace] HAZEL: Deserialized entity with ID = 15355018394736438603, name = Camera
-[23:18:46] [trace] HAZEL: Deserialized entity with ID = 9235617827118161440, name = Top
+[23:20:10] [info] HAZEL: Creating window Hazelnut (1600, 900)
+[23:20:10] [info] HAZEL: OpenGL Info:
+[23:20:10] [info] HAZEL:   Vendor: NVIDIA Corporation
+[23:20:10] [info] HAZEL:   Renderer: NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2
+[23:20:10] [info] HAZEL:   Version: 4.6.0 NVIDIA 560.70
+[23:20:10] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Quad.glsl
+[23:20:10] [trace] HAZEL:     1 uniform buffers
+[23:20:10] [trace] HAZEL:     0 resources
+[23:20:10] [trace] HAZEL: Uniform buffers:
+[23:20:10] [trace] HAZEL:   _46_48
+[23:20:10] [trace] HAZEL:     Size = 64
+[23:20:10] [trace] HAZEL:     Binding = 0
+[23:20:10] [trace] HAZEL:     Members = 1
+[23:20:10] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Quad.glsl
+[23:20:10] [trace] HAZEL:     0 uniform buffers
+[23:20:10] [trace] HAZEL:     1 resources
+[23:20:10] [trace] HAZEL: Uniform buffers:
+[23:20:10] [warning] HAZEL: Shader creation took 4.1585 ms
+[23:20:10] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Circle.glsl
+[23:20:10] [trace] HAZEL:     1 uniform buffers
+[23:20:10] [trace] HAZEL:     0 resources
+[23:20:10] [trace] HAZEL: Uniform buffers:
+[23:20:10] [trace] HAZEL:   _47_49
+[23:20:10] [trace] HAZEL:     Size = 64
+[23:20:10] [trace] HAZEL:     Binding = 0
+[23:20:10] [trace] HAZEL:     Members = 1
+[23:20:10] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Circle.glsl
+[23:20:10] [trace] HAZEL:     0 uniform buffers
+[23:20:10] [trace] HAZEL:     0 resources
+[23:20:10] [trace] HAZEL: Uniform buffers:
+[23:20:10] [warning] HAZEL: Shader creation took 2.9694 ms
+[23:20:10] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Line.glsl
+[23:20:10] [trace] HAZEL:     1 uniform buffers
+[23:20:10] [trace] HAZEL:     0 resources
+[23:20:10] [trace] HAZEL: Uniform buffers:
+[23:20:10] [trace] HAZEL:   _30_32
+[23:20:10] [trace] HAZEL:     Size = 64
+[23:20:10] [trace] HAZEL:     Binding = 0
+[23:20:10] [trace] HAZEL:     Members = 1
+[23:20:10] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Line.glsl
+[23:20:10] [trace] HAZEL:     0 uniform buffers
+[23:20:10] [trace] HAZEL:     0 resources
+[23:20:10] [trace] HAZEL: Uniform buffers:
+[23:20:10] [warning] HAZEL: Shader creation took 2.755 ms
+[23:20:14] [trace] HAZEL: Deserializing scene 'Untitled'
+[23:20:14] [trace] HAZEL: Deserialized entity with ID = 8244940659429586525, name = Left
+[23:20:14] [trace] HAZEL: Deserialized entity with ID = 2335431429201735937, name = Right
+[23:20:14] [trace] HAZEL: Deserialized entity with ID = 15355018394736438603, name = Camera
+[23:20:14] [trace] HAZEL: Deserialized entity with ID = 9235617827118161440, name = Top
